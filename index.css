@@ -1,7 +1,122 @@
-h2 {
-  color: blue;
+/* Container and layout styles */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0e6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* To-do list styles */
+#todo-list {
+  margin-top: 20px;
+  border: 1px solid #f0e6ff;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+  color: #777;
+}
+
+.todo-item button {
+  background-color: #f0e6ff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+#create-task {
+  margin-top: 20px;
+  display: flex;
+}
+
+#new-task-content {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #f0e6ff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#create-task button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.row p {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.row button,
+.row input[type="checkbox"] {
+  margin-left: 5px;
 }
 
 .delete {
-  margin-right: 10px;
+  background-color: #9370db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #9370db;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
